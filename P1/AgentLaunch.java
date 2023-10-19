@@ -23,7 +23,7 @@ public class AgentLaunch {
         p.setParameter(Profile.MAIN_HOST, "172.19.0.1");
         p.setParameter(Profile.CONTAINER_NAME, "Mi contenedor");
         ContainerController cc = rt.createAgentContainer(p);
-        String agentClassName = OneMsgAgent.class.getCanonicalName();
+        String agentClassName = AverageAgent.class.getCanonicalName();
         System.out.println(agentClassName);
         try {
             AgentController ac = cc.createNewAgent("Luis", agentClassName, null);

@@ -18,7 +18,6 @@ public class CyclicMsgAgent extends Agent {
         System.out.println("Lanzando agente tipo ciclico");
         Behaviour b = new CyclicMsgBehaviour(this, "Mensaje ciclico", 2000);
         this.addBehaviour(b);
-        doDelete();
     }
     
     @Override

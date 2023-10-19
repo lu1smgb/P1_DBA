@@ -18,6 +18,7 @@ public class CyclicMsgBehaviour extends TickerBehaviour {
 
     CyclicMsgBehaviour(Agent a, String msg, int ms) {
         super(a, ms);
+        this.msg = msg;
     }
     
     @Override
